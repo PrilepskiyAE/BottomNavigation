@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-    android:id="@+id/nav_home"
+    android:id="@+id/homeFragment"
     android:title="@string/home"
     android:enabled="true"
     android:icon="@drawable/ic_home"/>
     <item
-        android:id="@+id/nav_search"
+        android:id="@+id/searchFragment"
         android:title="@string/search"
         android:enabled="true"
         android:icon="@drawable/ic_search"/>
     <item
-        android:id="@+id/nav_radio"
+        android:id="@+id/radioFragment"
         android:title="@string/radio"
         android:enabled="true"
         android:icon="@drawable/ic_radio"/>
     <item
-        android:id="@+id/nav_my_music"
+        android:id="@+id/musicFragment"
         android:title="@string/my_music"
         android:enabled="true"
         android:icon="@drawable/ic_music"/>
     <item
-        android:id="@+id/nav_library"
+        android:id="@+id/libraryFragment"
         android:title="@string/library"
         android:enabled="true"
         android:icon="@drawable/ic_library"/>
