@@ -19,6 +19,6 @@ class MusicFragment : Fragment() {
 
     companion object {
 
-        fun newInstance(param1: String, param2: String) = MusicFragment()
+        fun newInstance() = MusicFragment()
     }
 }

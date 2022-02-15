@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ambrella.bottomnavigation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ambrella.bottomnavigation.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_radioFragment"
+            app:destination="@id/radioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.ambrella.bottomnavigation.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" >
+
+        <action
+            android:id="@+id/action_radioFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.ambrella.bottomnavigation.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.ambrella.bottomnavigation.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_libraryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>
